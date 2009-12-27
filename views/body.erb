@@ -1,0 +1,9 @@
+<% if @mail.html_body.blank? %>
+  <pre>
+<%=h @mail.plain_body %>
+  </pre>
+<% else %>
+  <div>
+    <%=safe_html @mail.html_body %>
+  </div>
+<% end %>

@@ -1,0 +1,20 @@
+<div>
+  <strong>From:</strong>
+  <%= @mail.from[0] %>
+  <%= @mail.from[1] %>
+</div>
+
+<div>
+  <strong>To:</strong>
+  <%= @mail.to %>
+</div>
+
+<div>
+  <strong>View source for full header</strong>
+  <pre style="display: none">
+<%= @mail.header %>
+  </pre>
+</div>
+<h1><%= @mail.subject %></h1>
+
+<iframe src="/mails/<%= @uid %>/body"></iframe>

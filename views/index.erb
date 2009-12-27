@@ -1,0 +1,21 @@
+<h1>pie</h1>
+
+<table class="mails">
+  <% @mails.each do |uid, mail| %>
+    <tr>
+      <td class='from'><%=h mail.from[0] %></td>
+      <td class='subject'><%= link_to(mail.subject, "/mails/#{uid}") %></td>
+      <td class="actions">
+        <form action="<%= "/mails/#{uid}" %>" method="POST">
+          <input type="submit" name="action" value="archive"/>
+          <input type="submit" name="action" value="delete"/>
+          <input type="submit" name="action" value="spam"/>
+        </form>
+        <form action="<%= "/compose" %>" method="GET">
+          <input type="hidden" name="reply_to" value="<%= uid %>"/>
+          <input type="submit" value="reply"/>
+        </form>
+      </td>
+    </tr>
+  <% end %>
+</table>

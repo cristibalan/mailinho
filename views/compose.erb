@@ -1,0 +1,15 @@
+<form action="/send" method="POST">
+  <div>
+    <label>To:</label>
+    <input name="mail[to]" value="<%#= @mail.to %>"/>
+  </div>
+
+  <div>
+    <label>Subject:</label>
+    <input name="mail[subject]" value="<%#= @mail.to %>"/>
+  </div>
+
+  <div>
+    <textarea name="mail[body]"><%#= @mail.to %></textarea>
+  </div>
+</form>

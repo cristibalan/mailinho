@@ -1,0 +1,22 @@
+js resize iframe based on content height
+
+replace ruby-gmail with raw imap
+  http://github.com/dira/freecycle-stats/blob/master/app/scripts/get_posts.rb
+
+check what body.preamble and body.epilogue do
+
+check for replies to encoding issues:
+  http://groups.google.com/group/mail-ruby/browse_thread/thread/aef1828da144fe54
+
+autolink fom rails or watchtower
+
+threading headers:
+  In-Reply-To: <messageid>
+  References: <messageid>,<messageid>,...
+
+sanitize html
+  http://wiki.whatwg.org/wiki/Sanitization_rules#CSS_Rules
+  http://github.com/rgrove/sanitize
+  http://github.com/courtenay/css_file_sanitize
+  http://guides.rubyonrails.org/security.html
+  roundcube washtml (at least steal tests?)

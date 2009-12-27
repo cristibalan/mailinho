@@ -1,0 +1,22 @@
+body {
+  font: normal 12px Helvetica;
+  padding: 2em;
+}
+
+iframe {
+  width: 50em;
+  height: 2000px;
+}
+
+.mails .from {
+  width: 200px;
+}
+.mails .actions {
+  width: 300px;
+}
+.mails .actions * {
+  display: inline;
+}
+.mails .actions {
+  white-space: nowrap;
+}

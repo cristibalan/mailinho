@@ -1,0 +1,6 @@
+broken webmail thingy
+
+- fetching, parsing, doing stuff to messages works but is too slow
+  - need ajaxes and queues to do bulk operations
+- can't compose/reply/forward
+- i hate imap
